@@ -1,0 +1,55 @@
+body {
+  height: calc(100vh - 60px);
+  width: 100vw;
+  margin: 30px 0;
+  overflow: auto;
+}
+
+/* LEADERBOARD.vue CSS */
+.loading-wrapper {
+  display: flex;
+  justify-content: center;
+  .d-btn--loading {
+    width: 50px;
+    height: 50px;
+    margin-top: 15px;
+    &:before {
+      width: 50px;
+      height: 50px;
+      border-color: #3a1c95;
+    }
+  }
+}
+
+.leaderboard-table {
+  .d-table__caption {
+    text-align: center !important;
+    span {
+      background-color: var(--purple-100);
+    }
+  }
+  table {
+    th,
+    td {
+      text-align: center;
+      &.user-name-avatar {
+        margin: -1px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        span {
+          align-items: center;
+          width: 100%;
+        }
+        .avatar-wrapper {
+          img {
+            margin-right: 15px;
+            max-width: 35px;
+            border-radius: 50%;
+          }
+        }
+      }
+    }
+  }
+}
+/* LEADERBOARD.vue CSS */
