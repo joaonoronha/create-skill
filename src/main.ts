@@ -1,14 +1,9 @@
 import { defineCustomElement } from "vue";
 import App from "./App.ce.vue";
+import { name } from '../package.json';
 
 export const AppInstance = defineCustomElement(App);
 
-/*
-export function register(tagName="hello-world") {
-    customElements.define(tagName, AppInstance);
-}
-*/
-
-if(customElements.get('hello-world') === undefined) {
-    customElements.define('hello-world', AppInstance);
+if(customElements.get(name) === undefined) {
+    customElements.define(name, AppInstance);
 }
